@@ -1,0 +1,7 @@
+main_navigation:
+  - title: "首页"
+    url: "/"
+  - title: "项目展示"
+    url: "/projects"
+  - title: "关于"
+    url: "/about"
