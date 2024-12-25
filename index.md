@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # HT博客 - 主页
 
 ## 目录
