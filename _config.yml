@@ -24,9 +24,9 @@ colors:
   secondary: "#FF6347" # 番茄红
 
 # Logo和自定义图像
-logo: "/assets/img/mechanical_logo.png"  # 可放置一个机器人或机械风格的logo图像
+logo: "/assets/img/机器人.png"  # 可放置一个机器人或机械风格的logo图像
 header:
-  image: "/assets/img/robot_header.jpg"  # 网站头部可以放一个机械风格的背景图片
+  image: "/assets/img/博客专家.png"  # 网站头部可以放一个机械风格的背景图片
 
 # 网站功能增强
 plugins:
