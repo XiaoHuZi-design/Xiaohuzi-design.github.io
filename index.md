@@ -1,13 +1,10 @@
----
-layout: default
----
 
 # HT博客 - 主页
 
 ## 目录
 
 - [简介](#简介)
-- [欢迎来到HT博客网站](#欢迎来到ht博客网站)
+- [欢迎来到HT博客网站](#欢迎来到ht博客网站)[Blog](https://xiaohuzi-design.github.io/web-HT_Libra)
 - [特色功能](#特色功能)
 - [最新文章](#最新文章)
 - [联系我们](#联系我们)
