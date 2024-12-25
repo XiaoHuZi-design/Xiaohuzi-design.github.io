@@ -13,6 +13,7 @@ baseurl: "" # 如果有子路径，例如 /blog
 url: "https://Xiaohuzi-design.github.io" # 站点的基础链接
 theme: jekyll-theme-minimal
 
+
 # 自定义设置
 author:
   name: 机械仔
@@ -39,3 +40,17 @@ social_links:
   twitter: https://twitter.com/Xiaohuzi
   github: https://github.com/Xiaohuzi-design
   linkedin: https://www.linkedin.com/in/xiaohuzi
+
+
+# 导航栏配置
+navigation:
+  - title: 首页
+    url: /
+  - title: 博客
+    url: /blog/
+  - title: 项目
+    url: /projects/
+  - title: 关于
+    url: /about/
+  - title: 联系
+    url: /contact/

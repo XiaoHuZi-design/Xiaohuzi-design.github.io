@@ -1,0 +1,32 @@
+---
+---
+
+.site-nav {
+  background: #333;  // 直接使用颜色代码替代 Liquid 语法
+  padding: 1rem 0;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    li {
+      margin: 0 1rem;
+      
+      a {
+        color: white;
+        text-decoration: none;
+        
+        &:hover {
+          color: #666;  // 直接使用颜色代码
+        }
+        
+        &.active {
+          border-bottom: 2px solid #666;  // 直接使用颜色代码
+        }
+      }
+    }
+  }
+}
