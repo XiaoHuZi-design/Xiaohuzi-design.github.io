@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HT博客 - 主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  <!-- 假设你有一个外部CSS文件 -->
+</head>
+<body>
+    <header>
+        <h1>HT博客 - 主页</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#简介">简介</a></li>
+            <li><a href="#欢迎来到ht博客网站">欢迎来到HT博客网站</a></li>
+            <li><a href="#特色功能">特色功能</a></li>
+            <li><a href="#最新文章">最新文章</a></li>
+            <li><a href="#联系我们">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="简介">
+            <h2>简介</h2>
+            <blockquote>
+                Postgraduate study and research career project documents
+            </blockquote>
+        </section>
+
+        <section id="欢迎来到ht博客网站">
+            <h2>欢迎来到HT博客网站</h2>
+            <p>这里是一个按钮示例：后续考虑增添功能。</p>
+            <button-counter></button-counter>
+
+            <div id="counter">
+                <button @click="count -= 1">-</button>
+                {{ count }}
+                <button @click="count += 1">+</button>
+            </div>
+        </section>
+
+        <section id="特色功能">
+            <h2>特色功能</h2>
+            <ul>
+                <li><strong>多语言支持</strong>：我们提供了多种语言版本的内容，满足不同读者的需求。</li>
+                <li><strong>互动社区</strong>：加入我们的讨论区，与开发者和其他爱好者交流心得。</li>
+                <li><strong>实时更新</strong>：关注最新的技术趋势和技术分享。</li>
+                <li><strong>学习资源</strong>：丰富的教程和指南，帮助您掌握新技能。</li>
+            </ul>
+        </section>
+
+        <section id="最新文章">
+            <h2>最新文章</h2>
+            <ul>
+                <li><a href="https://www.cnblogs.com/linuxAndMcu/p/10201215.html" target="_blank">十大经典排序算法（C++实现） - fengMisaka - 博客园 (cnblogs.com)</a></li>
+                <li><a href="https://blog.csdn.net/wjinjie/article/details/107509243" target="_blank">YOLO系列算法精讲：从yolov1至yolov8的进阶之路（2万字超全整理）</a></li>
+                <li>更多精彩内容，请浏览 <a href="./articles_list.md">文章列表</a></li>
+            </ul>
+        </section>
+
+        <section id="联系我们">
+            <h2>联系我们</h2>
+            <p>如果您有任何问题或建议，请通过以下方式联系我们：</p>
+            <ul>
+                <li>邮箱: <a href="mailto:2388817362@qq.com">2388817362@qq.com</a></li>
+                <li>公众号: 邻家小胡说故事</li>
+                <li>GitHub: <a href="https://github.com/XiaoHuZi-design/" target="_blank">HT博客 GitHub</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- tabs:start -->
+            <h2>Language Tabs</h2>
+            <div>
+                <button>English</button>
+                <div>Hello!</div>
+            </div>
+            <div>
+                <button>Chinese</button>
+                <div>你好</div>
+            </div>
+            <div>
+                <button>Italian</button>
+                <div>Ciao!</div>
+            </div>
+            <!-- tabs:end -->
+        </section>
+
+        <section>
+            <form action="https://your-email-service-url" method="POST">
+                <input type="email" name="EMAIL" placeholder="输入您的邮箱..." required>
+                <button type="submit">订阅</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HT博客. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script>
+        new Vue({
+            el: '#counter',
+            data: {
+                count: 0
+            }
+        });
+    </script>
+</body>
+</html>
