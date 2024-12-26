@@ -28,8 +28,8 @@ plugins:
 # 覆盖 GitHub 生成的 URL
 github:
   # github下载格式 https://github.com/{owner}/{repository}/archive/refs/heads/{branch}.zip
-  zip_url: https://github.com/pages-themes/minimal/archive/refs/heads/main.zip
-  tar_url: https://github.com/pages-themes/minimal/archive/refs/heads/main.tar.gz
+  zip_url: https://github.com/pages-themes/minimal/archive/refs/heads/master.zip
+  tar_url: https://github.com/pages-themes/minimal/archive/refs/heads/master.tar.gz
   repository_url: https://Xiaohuzi-design.github.io
   another_url: another value
 
