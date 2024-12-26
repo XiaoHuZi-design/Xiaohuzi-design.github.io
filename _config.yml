@@ -27,7 +27,9 @@ plugins:
 
 # 覆盖 GitHub 生成的 URL
 github:
-  zip_url: http://example.com/download.zip
+  zip_url: https://github.com/pages-themes/minimal
+  tar_url: https://github.com/pages-themes/minimal
+  repository_url: https://Xiaohuzi-design.github.io
   another_url: another value
 
 # 社交链接
