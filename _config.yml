@@ -11,21 +11,11 @@ logo: "/assets/img/机器人.png"  # 可放置一个机器人或机械风格的l
 description: >-
   欢迎来到机械仔的个人网站！这里记录了我的机器人技术、机器视觉、深度学习以及更多的技术探索。
 show_downloads: true
-google_analytics:    # 你的 Google Analytics 跟踪 ID
+google_analytics:    # 流量分析工具，你的Google Analytics跟踪ID ，类似UA-XXXXXXXX-X
 baseurl: ""  # 如果有子路径，例如 /blog
 url: "https://Xiaohuzi-design.github.io"  # 站点的基础链接
-theme: jekyll-theme-minimal
-#remote_theme: pages-themes/minimal@v0.2.0
-
-# 自定义设置
-author:
-  name: 机械仔
-  email: xiaohuzi@example.com
-
-# 配色方案
-colors:
-  primary: "#1F2A44" # 深蓝色
-  secondary: "#FF6347" # 番茄红
+theme: jekyll-theme-minimal     # 本地主体
+#remote_theme: pages-themes/minimal@v0.2.0  # 远程主题
 
 
 # 网站功能增强
@@ -35,24 +25,25 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-# 网站的元数据
+# 覆盖 GitHub 生成的 URL
+github:
+  zip_url: http://example.com/download.zip
+  another_url: another value
+
+# 社交链接
 social_links:
-  twitter: https://twitter.com/Xiaohuzi
-  github: https://github.com/Xiaohuzi-design
-  linkedin: https://www.linkedin.com/in/xiaohuzi
+  twitter: https://twitter.com/yourprofile
+  github: https://github.com/yourprofile
+  linkedin: https://www.linkedin.com/in/yourprofile
+
+# 配色方案
+colors:
+  primary: "#1F2A44" # 深蓝色
+  secondary: "#FF6347" # 番茄红
+
+# 自定义设置
+author:
+  name: 机械仔
+  email: xiaohuzi@example.com
 
 
-# 导航栏配置
-navigation:
-  - title: 首页
-    url: /
-  - title: 博客
-    url: /blog/
-  - title: 项目
-    url: /projects/
-  - title: 关于
-    url: /about/
-  - title: 联系
-    url: /contact/
-  - title: Libra项目
-    url: /libra/
