@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
@@ -94,18 +94,7 @@
             // 启用相对路径
             relativePath: true,
             // 加载侧边栏中出现的网页图标
-            //logo: '_media/LogosBun.svg',
-            //logo: '_media/icon/摸鱼办公.png',    
-            //logo: '_media/icon/摸鱼.png',
-            //logo: '_media/icon/Ai.png',
-            //logo: '_media/icon/教育科研.png',
-            // logo: '_media/icon/一起摸鱼.png',
-            // logo: '_media/icon/汉堡可乐.png',
-            // logo: '_media/icon/机器人.png',
-            //logo: '_media/icon/博客.png',
-            // logo: '_media/icon/博客专家.png',
-            logo: '_media/images/05.jpg',
-
+            logo: '{{ site.baseurl }}/assets/images/05.jpg',
 
             //执行文档里的script标签
             executeScript: true,
@@ -114,8 +103,6 @@
             //文档变更日期
             formatUpdated: '{MM}/{DD} {HH}:{mm}',
             formatUpdated: function(time) {
-              // ...
-
               return time;
             }, 
 
@@ -223,16 +210,14 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
 
-
     <!--代码行号显示与阅读量统计-->
-    <script src="highlight-line.js"></script>
-    <script src="read-num.js"></script>
+    <script src="{{ site.baseurl }}/highlight-line.js"></script>
+    <script src="{{ site.baseurl }}/read-num.js"></script>
     <!--加密文本 CRYPOTOJS库-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script> 
-    <script src="document_encryption.js"></script>
+    <script src="{{ site.baseurl }}/document_encryption.js"></script>
 
-
-     <!-- 评论系统 -->
+    <!-- 评论系统 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
@@ -240,7 +225,6 @@
     <script>
         window.onload = function() {  //确保 Gitalk 在页面完全加载后初始化
             const gitalk = new Gitalk({
-                //id: decodeURI('{{ page.url }}'),
                 id: location.pathname, // 使用当前页面路径作为唯一标识符
                 clientID: 'Ov23ctkR3x4dcec6C8kY',
                 clientSecret: '7531a15e87dcba97e0b234d9b140f46b23dd67ec',
