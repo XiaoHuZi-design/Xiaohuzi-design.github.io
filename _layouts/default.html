@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,6 +38,13 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+        <!-- 新增的社交链接按钮 -->
+        <ul class="social-links">
+          <li><a href="{{ site.social_links.douyin }}" target="_blank">抖音</a></li>
+          <li><a href="{{ site.social_links.bilibili }}" target="_blank">B站</a></li>
+          <li><a href="{{ site.social_links.youtube }}" target="_blank">YouTube</a></li>
+        </ul>
       </header>
       <section>
 

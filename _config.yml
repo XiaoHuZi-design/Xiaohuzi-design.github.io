@@ -27,16 +27,17 @@ plugins:
 
 # 覆盖 GitHub 生成的 URL
 github:
-  zip_url: https://github.com/pages-themes/minimal/download.zip
-  tar_url: https://github.com/pages-themes/minimal/download.tar.gz
+  # github下载格式 https://github.com/{owner}/{repository}/archive/refs/heads/{branch}.zip
+  zip_url: https://github.com/pages-themes/minimal/archive/refs/heads/main.zip
+  tar_url: https://github.com/pages-themes/minimal/archive/refs/heads/main.tar.gz
   repository_url: https://Xiaohuzi-design.github.io
   another_url: another value
 
 # 社交链接
 social_links:
-  twitter: https://twitter.com/yourprofile
-  github: https://github.com/yourprofile
-  linkedin: https://www.linkedin.com/in/yourprofile
+  douyin: https://www.douyin.com/yourprofile
+  bilibili: https://space.bilibili.com/yourprofile
+  youtube: https://www.youtube.com/channel/yourprofile
 
 # 配色方案
 colors:
