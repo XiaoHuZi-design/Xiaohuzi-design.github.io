@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  <!-- 文档类型声明，定义 HTML5 文档 -->
+  <!-- 设置网页语言，默认为 "en-US" -->
   <head>
+    <!-- 文档头部 -->
     <meta charset="UTF-8">
+    <!-- 定义文档的字符编码为 UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 兼容 Internet Explorer 的 Edge 模式 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 设置视口，以确保页面在移动设备上正常显示 -->
 
     {% seo %}
+    <!-- 插入 SEO 元数据（由 Jekyll 插件生成） -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- 引入样式表，使用版本号避免缓存问题 -->
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <!-- 为低于 IE9 的浏览器引入 HTML5 支持的脚本 -->
+
     {% include head-custom.html %}
+    <!-- 包含自定义的头部 HTML 文件 -->
   </head>
   <body>
+    <!-- 文档主体 -->
     <div class="wrapper">
+      <!-- 主容器 -->
       <header>
+        <!-- 头部 -->
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <!-- 标题链接到首页，显示站点标题或仓库名称 -->
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{ site.logo | relative_url }}" alt="Logo" />
+          <!-- 如果站点配置了 logo，显示 logo 图片 -->
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <!-- 显示站点描述或项目标语 -->
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        <!-- 如果这是一个项目页面，显示查看 GitHub 项目的链接 -->
         {% endif %}
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        <!-- 如果这是用户页面，显示查看 GitHub 个人资料的链接 -->
         {% endif %}
 
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+          <li><a href="{{ site.github.owner_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
+        <!-- 如果启用了下载选项，显示下载 ZIP 文件、TAR 文件和查看 GitHub 的链接 -->
         {% endif %}
 
         <!-- 新增的社交链接按钮 -->
@@ -47,23 +68,30 @@
           <li><a href="{{ site.social_links.HT_Libra }}" target="_blank">web_HT_Libra</a></li>
           <li><a href="{{ site.social_links.BLOG }}" target="_blank">BLOG</a></li>
         </ul>
+        <!-- 显示社交媒体链接 -->
       </header>
       <section>
-
-      {{ content }}
-
+        <!-- 主要内容部分 -->
+        {{ content }}
+        <!-- 插入页面内容 -->
       </section>
       <footer>
+        <!-- 页脚 -->
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <!-- 如果这是一个项目页面，显示项目维护者的信息 -->
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <!-- 显示托管信息和主题作者 -->
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <!-- 引入修正缩放比例的脚本 -->
 
     <footer>
+      <!-- 页脚 -->
       <p>&copy; 2024 HT博客. All rights reserved.</p>
+      <!-- 显示版权信息 -->
     </footer>
   </body>
 </html>

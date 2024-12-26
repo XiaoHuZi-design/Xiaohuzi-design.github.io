@@ -73,7 +73,7 @@ Ciao!
     <button type="submit">订阅</button>
 </form>
 
-© 2024 HT博客. All rights reserved.
+<!-- © 2024 HT博客. All rights reserved. -->
 <!-- <footer>
     <p>&copy; 2024 HT博客. All rights reserved.</p>
 </footer> -->
