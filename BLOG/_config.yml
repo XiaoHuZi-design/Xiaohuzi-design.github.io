@@ -1,0 +1,5 @@
+# _config.yml in BLOG repository
+
+title: "BLOG"
+baseurl: "/BLOG"  # 注意这个路径
+url: "https://xiaohuzi-design.github.io"
