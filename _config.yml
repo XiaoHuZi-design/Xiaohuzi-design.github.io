@@ -7,12 +7,15 @@
 
 
 title: 机械仔的探索世界
+logo: "/assets/img/机器人.png"  # 可放置一个机器人或机械风格的logo图像
 description: >-
   欢迎来到机械仔的个人网站！这里记录了我的机器人技术、机器视觉、深度学习以及更多的技术探索。
-baseurl: "" # 如果有子路径，例如 /blog
-url: "https://Xiaohuzi-design.github.io" # 站点的基础链接
+show_downloads: true
+google_analytics:    # 你的 Google Analytics 跟踪 ID
+baseurl: ""  # 如果有子路径，例如 /blog
+url: "https://Xiaohuzi-design.github.io"  # 站点的基础链接
 theme: jekyll-theme-minimal
-
+#remote_theme: pages-themes/minimal@v0.2.0
 
 # 自定义设置
 author:
@@ -24,13 +27,10 @@ colors:
   primary: "#1F2A44" # 深蓝色
   secondary: "#FF6347" # 番茄红
 
-# Logo和自定义图像
-logo: "/assets/img/机器人.png"  # 可放置一个机器人或机械风格的logo图像
-header:
-  image: "/assets/img/博客专家.png"  # 网站头部可以放一个机械风格的背景图片
 
 # 网站功能增强
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
