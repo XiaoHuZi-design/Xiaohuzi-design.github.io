@@ -12,7 +12,7 @@ description: >-
   欢迎来到机械仔的个人网站！这里记录了我的机器人技术、机器视觉、深度学习以及更多的技术探索。
 show_downloads: true
 google_analytics:    # 流量分析工具，你的Google Analytics跟踪ID ，类似UA-XXXXXXXX-X
-baseurl: ""  # 如果有子路径，例如 /blog
+baseurl: "/BLOG"  # 如果有子路径，例如 /blog
 url: "https://Xiaohuzi-design.github.io"  # 站点的基础链接
 theme: jekyll-theme-minimal     # 本地主体
 #remote_theme: pages-themes/minimal@v0.2.0  # 远程主题
